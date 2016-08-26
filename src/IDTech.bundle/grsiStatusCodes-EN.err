@@ -1,0 +1,39 @@
+0000	OK
+0001	Incorrect Header Tag
+0002	Unknown Command
+0003	Unknown Sub-Command
+0004	CRC Error in Frame
+0005	Incorrect Parameter
+0006	Parameter Not Supported
+0007	Mal-formatted Data
+0008	Timeout
+000A	Failed / NACK
+000B	Command not Allowed
+000C	Sub-Command not Allowed
+000D	Buffer Overflow (Data Length too large for reader buffer)
+000E	User Interface Event
+0011	Communication type not supported, VT-1, burst, etc.
+0012	Secure interface is not functional or is in an intermediate state.
+0013	Data field is not mod 8
+0014	Pad 0x80 not found where expected
+0015	Specified key type is invalid
+0016	Could not retrieve key from the SAM (InitSecureComm)
+0017	Hash code problem
+0018	Could not store the key into the SAM (InstallKey)
+0019	Frame is too large
+001A	Unit powered up in authentication state but POS must resend the InitSecureComm command
+001B	The EEPROM may not be initialized because SecCommInterface does not make sense
+001C	Problem encoding APDU
+0020	Unsupported Index (ILM) SAM Transceiver error – problem communicating with the SAM (Key Mgr)
+0021	Unexpected Sequence Counter in multiple frames for single bitmap (ILM) Length error in data returned from the SAM (Key Mgr)
+0022	Improper bit map (ILM)
+0023	Request Online Authorization
+0024	ViVOCard3 raw data read successful
+0025	Message index not available (ILM) ViVOcomm activate transaction card type (ViVOcomm)
+0026	Version Information Mismatch (ILM)
+0027	Not sending commands in correct index message index (ILM)
+0028	Time out or next expected message not received (ILM)
+0029	ILM languages not available for viewing (ILM)
+002A	Other language not supported (ILM)
+0050	Auto-Switch OK
+0051	Auto-Switch failed
