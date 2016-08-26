@@ -20,7 +20,7 @@
     <!-- cordova -->
     <engines>
 	  <engine name="cordova" version=">=3.5.0"/>
-	<engine name="IDTech.framework" platform="ios" scriptSrc="src/ios/IDTech.framework"/>
+	<engine name="IDTech.framework" version=">=1.0.0" platform="ios" scriptSrc="src/ios/IDTech.framework"/>
     </engines>
     
     <!-- dependencies -->
