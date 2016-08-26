@@ -62,20 +62,19 @@ typedef enum {
     
     switch (event) {
         case UniMagSwiperEventTypeDataRecieved:
-            //eventMethod = @"plugin.swiperDidRecieveData";
-            eventMethod = @"app.onDataRecieved";
+            eventMethod = @"cordova.plugins.unimagIISwiper.swiperDidRecieveData";
             break;
         case UniMagSwiperEventTypeErrorRecieved:
-            eventMethod = @"plugin.swiperDidRecieveError";
+            eventMethod = @"cordova.plugins.unimagIISwiper.swiperDidRecieveError";
             break;
         case UniMagSwiperEventTypeDeviceAttached:
-            eventMethod = @"plugin.swiperDidAttach";
+            eventMethod = @"cordova.plugins.unimagIISwiper.swiperDidAttach";
             break;
         case UniMagSwiperEventTypeDeviceConnected:
-            eventMethod = @"plugin.swiperDidConnect";
+            eventMethod = @"cordova.plugins.unimagIISwiper.swiperDidConnect";
             break;
         case UniMagSwiperEventTypeSwipeStart:
-            eventMethod = @"plugin.swiperDidStartSwipe";
+            eventMethod = @"cordova.plugins.unimagIISwiper.swiperDidStartSwipe";
             break;
             
         default:
