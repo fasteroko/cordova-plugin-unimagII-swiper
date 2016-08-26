@@ -38,7 +38,7 @@
             </feature>
         </config-file>
 
-	<source-file src="src/IDTech.framework" framework="true" />
+	<source-file src="src/ios/IDTech.framework" framework="true" />
         <source-file src="src/ios/IDTechEMV.framework" framework="true" />
         <source-file src="src/ios/IDTech.bundle"/>
 
@@ -48,7 +48,7 @@
 		<header-file src="src/ios/UniMagHelper.h" />
 		<source-file src="src/ios/UniMagHelper.m" />
 
-        <framework src="src/StarIO.framework" custom="true" />
+        <framework src="src/ios/StarIO.framework" custom="true" />
         <framework src="MediaPlayer.framework"/>
 	</platform>
 
