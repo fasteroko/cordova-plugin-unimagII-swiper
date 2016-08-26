@@ -48,6 +48,7 @@
 		<header-file src="src/ios/UniMagHelper.h" />
 		<source-file src="src/ios/UniMagHelper.m" />
 
+        <framework src="src/ios/StarIO.framework" custom="true" />
         <framework src="MediaPlayer.framework"/>
 	</platform>
 
