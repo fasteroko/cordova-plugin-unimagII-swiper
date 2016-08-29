@@ -19,7 +19,7 @@ Swiper.swiperDidRecieveData = function (data) {
 };
 
 Swiper.swiperDidRecieveError = function (error) {
-    alert('Error:');
+    alert('Error from js!');
     alert(error);
 };
 
@@ -33,7 +33,6 @@ Swiper.swiperDidConnect = function (connectStatus) {
 
 Swiper.swiperDidStartSwipe = function () {
     alert('Did Start Swipe');
-    document.addEventListener('swipeDidStart', unimagIISwiperDidStart('Started'));
 };
 
 module.exports = Swiper;
