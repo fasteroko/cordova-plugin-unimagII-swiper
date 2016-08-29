@@ -92,14 +92,14 @@ typedef enum {
 - (void)uniMagDidStatusChange:(BOOL)connected {
     if (connected){
         _isDeviceWasActivated = connected;
-        [self.commandDelegate evalJs:@"alert('Swiper is ACTIVATED')"];
+        //[self.commandDelegate evalJs:@"alert('Swiper is ACTIVATED')"];
         [[UniMagHelper shared] requestSwipe];
         
         // Notify Cordova about Event
         [self fireEvent:UniMagSwiperEventTypeDeviceConnected withData:@YES];
     } else {
         if (_isDeviceWasActivated) {
-            [self.commandDelegate evalJs:@"alert('Swiper is DEACTIVATED')"];
+            //[self.commandDelegate evalJs:@"alert('Swiper is DEACTIVATED')"];
             
             // Notify Cordova about Event
             [self fireEvent:UniMagSwiperEventTypeDeviceConnected withData:@NO];
@@ -109,13 +109,13 @@ typedef enum {
 
 - (void)uniMagDidAttach:(BOOL)attached {
     if (attached) {
-        [self.commandDelegate evalJs:@"alert('Device is plugged-IN')"];
+        //[self.commandDelegate evalJs:@"alert('Device is plugged-IN')"];
         [[UniMagHelper shared] requestSwipe];
         
         // Notify Cordova about Event
         [self fireEvent:UniMagSwiperEventTypeDeviceAttached withData:@YES];
     } else {
-        [self.commandDelegate evalJs:@"alert('Device is plugged-OUT')"];
+        //[self.commandDelegate evalJs:@"alert('Device is plugged-OUT')"];
         
         // Notify Cordova about Event
         [self fireEvent:UniMagSwiperEventTypeDeviceAttached withData:@NO];
@@ -173,8 +173,10 @@ typedef enum {
 - (void)uniMagSwipeError:(NSError *)error {
     [[UniMagHelper shared] requestSwipe];
     
+    NSString *errorDescription = [error.localizedDescription stringByReplacingOccurrencesOfString:@"\n" withString:@". "];
+    
     // Notify Cordova about Event
-    [self fireEvent:UniMagSwiperEventTypeErrorRecieved withData:error.localizedDescription];
+    [self fireEvent:UniMagSwiperEventTypeErrorRecieved withData:errorDescription];
 }
 
 @end

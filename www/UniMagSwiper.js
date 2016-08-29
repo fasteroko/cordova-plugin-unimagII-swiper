@@ -23,11 +23,19 @@ Swiper.swiperDidRecieveError = function (error) {
 };
 
 Swiper.swiperDidAttach = function (attachStatus) {
-    alert(attachStatus);
+    if (attachStatus == 0) {
+        alert('Device is plugged-out!');
+    } else {
+        alert('Device is plugged-in!');
+    }
 };
 
 Swiper.swiperDidConnect = function (connectStatus) {
-    alert(connectStatus);
+    if (connectStatus == 0) {
+        alert('Device is disconnected!');
+    } else {
+        alert('Device is connected!');
+    }
 };
 
 Swiper.swiperDidStartSwipe = function () {
