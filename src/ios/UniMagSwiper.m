@@ -167,7 +167,7 @@ typedef enum {
     NSLog(@"%@",cardInfoDictionary);
     
     // Notify Cordova about Event
-    [self fireEvent:UniMagSwiperEventTypeDataRecieved withData:cardNumber];
+    [self fireEvent:UniMagSwiperEventTypeDataRecieved withData:maskedTracks];
 }
 
 - (void)uniMagSwipeError:(NSError *)error {

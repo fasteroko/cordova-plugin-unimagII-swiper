@@ -15,33 +15,38 @@ Swiper.deactivate = function(success, error) {
 };
 
 Swiper.swiperDidRecieveData = function (data) {
-    //alert(data);
+    // Data recieved event
     Swiper.onDataRecieved(data);
 };
 
 Swiper.swiperDidRecieveError = function (error) {
-    //alert(error);
+    // Error recieved event
     Swiper.onErrorRecieved(error);
 };
 
 Swiper.swiperDidAttach = function (attachStatus) {
     if (attachStatus == 0) {
-        alert('Device is plugged-out!');
+        //alert('Device is plugged-out!');
+        Swiper.didAttachDevice(false);
     } else {
-        alert('Device is plugged-in!');
+        //alert('Device is plugged-in!');
+        Swiper.didAttachDevice(true);
     }
 };
 
 Swiper.swiperDidConnect = function (connectStatus) {
     if (connectStatus == 0) {
-        alert('Device is disconnected!');
+        //alert('Device is disconnected!');
+        Swiper.didConnectDevice(false);
     } else {
-        alert('Device is connected!');
+        //alert('Device is connected!');
+        Swiper.didConnectDevice(true);
     }
 };
 
 Swiper.swiperDidStartSwipe = function () {
-    //alert('Did Start Swipe');
+    // Did start swipe event
+    Swiper.didStartSwipe();
 };
 
 module.exports = Swiper;
