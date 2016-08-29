@@ -19,6 +19,7 @@ Swiper.swiperDidRecieveData = function (data) {
 };
 
 Swiper.swiperDidRecieveError = function (error) {
+    alert('Error:');
     alert(error);
 };
 

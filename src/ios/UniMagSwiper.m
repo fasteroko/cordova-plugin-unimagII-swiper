@@ -171,7 +171,6 @@ typedef enum {
 }
 
 - (void)uniMagSwipeError:(NSError *)error {
-    [self.commandDelegate evalJs:@"alert('Error!')"];
     [[UniMagHelper shared] requestSwipe];
     
     // Notify Cordova about Event
