@@ -19,7 +19,6 @@ Swiper.swiperDidRecieveData = function (data) {
 };
 
 Swiper.swiperDidRecieveError = function (error) {
-    alert('Error from js!');
     alert(error);
 };
 
@@ -32,7 +31,7 @@ Swiper.swiperDidConnect = function (connectStatus) {
 };
 
 Swiper.swiperDidStartSwipe = function () {
-    alert('Did Start Swipe');
+    //alert('Did Start Swipe');
 };
 
 module.exports = Swiper;
