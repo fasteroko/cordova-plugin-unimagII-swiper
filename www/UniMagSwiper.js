@@ -15,11 +15,13 @@ Swiper.deactivate = function(success, error) {
 };
 
 Swiper.swiperDidRecieveData = function (data) {
-	alert(data);
+    //alert(data);
+    Swiper.onDataRecieved(data);
 };
 
 Swiper.swiperDidRecieveError = function (error) {
-    alert(error);
+    //alert(error);
+    Swiper.onErrorRecieved(error);
 };
 
 Swiper.swiperDidAttach = function (attachStatus) {
