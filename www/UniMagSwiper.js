@@ -33,7 +33,7 @@ Swiper.swiperDidConnect = function (connectStatus) {
 
 Swiper.swiperDidStartSwipe = function () {
     alert('Did Start Swipe');
-    window.addEventListener('swipeDidStart', unimagIISwiperDidStart('Started'));
+    document.addEventListener('swipeDidStart', unimagIISwiperDidStart('Started'));
 };
 
 module.exports = Swiper;
