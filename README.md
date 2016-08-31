@@ -7,7 +7,7 @@ This plugin follows the Cordova 3.0+ plugin spec, so it can be installed through
 
 # JavaScript Usage Example
 
-•	Send custom text on printer
+•	Example of use:
 
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
